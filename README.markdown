@@ -91,35 +91,14 @@ To run this project, you need:
   - Zips with notebook into `result.zip`.
 
 ## 🔍 Evaluation
-- **Questions**: 16 predefined questions (e.g., "توروالدز برای کار در چه موسسه‌ای دانشگاه هلسینکی را ترک گفت؟").
+- **Questions**: 16 predefined questions (e.g., "پرسش ۴: چه کسی بنیاد نرم‌افزارهای آزاد را بنا نهاد؟").
 - **Output Format**: Each answer is a JSON dictionary:
   ```json
-  {"question_number": 1, "answer": "اینتل"}
+  {"question_number": 4, "answer": 'ریچارد استالمن'}
   ```
 - **Constraints**:
   - Answers must be ≤4 words in Persian.
   - At least 12 correct answers required for success.
-- **System Evaluation**: Automated scoring checks for exact or equivalent answers in `answers.json`.
-
-## 📝 Notes
-- **Multilingual Support**: Uses Cohere’s multilingual embeddings to handle Persian and English content.
-- **Preprocessing**: Minimal text cleaning applied to PDF; further preprocessing suggested in Quera’s project page.
-- **API Limits**: Handles Cohere API rate limits and Wikipedia request throttling with `time.sleep`.
-- **Performance Tips**:
-  - Use Google Colab with GPU for faster embedding with Hugging Face models (optional).
-  - Persist vector store to avoid re-embedding documents.
-- **Project Context**: Developed as an academic assignment to demonstrate RAG, LangChain, and prompt engineering.
-
-## 🤝 Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make changes and commit (`git commit -m 'Add feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
-
-## 📜 License
-This project is licensed under the MIT License.
 
 ## 🎓 Credits
 Developed as part of a Quera academic project, leveraging LangChain and Cohere for RAG-based chatbot implementation.

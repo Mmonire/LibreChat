@@ -94,7 +94,7 @@ To run this project, you need:
 - **Questions**: 16 predefined questions (e.g., "پرسش ۴: چه کسی بنیاد نرم‌افزارهای آزاد را بنا نهاد؟").
 - **Output Format**: Each answer is a JSON dictionary:
   ```json
-  {"question_number": 4, "answer": 'ریچارد استالمن'}
+  {"question_number": 4, "answer": "ریچارد استالمن"}
   ```
 - **Constraints**:
   - Answers must be ≤4 words in Persian.
